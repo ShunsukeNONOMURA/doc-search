@@ -1,0 +1,41 @@
+PUT t_document_v1
+{
+  "aliases": {
+    "t_document": {}
+  },
+  "settings": {
+  },
+  "mappings": {
+    "properties": {
+      "@timestamp": {
+        "type": "date"
+      },
+      "document_id": {
+        "type" : "keyword"
+      },
+      "document_name": {
+        "type" : "keyword"
+      },
+      "document_content": {
+        "type" : "keyword"
+      },
+      
+      "document_creation_user_id": {
+        "type" : "keyword"
+      },
+      "document_creation_datetime": {
+        "type": "date"
+      },
+      
+      "document_update_user_id": {
+        "type" : "keyword"
+      },
+      "document_update_datetime": {
+        "type": "date"
+      }
+    }
+  }
+}
+
+DELETE t_document_v1
+GET t_document_v1/_search
