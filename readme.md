@@ -28,3 +28,6 @@ https://blog.interfamilia.co.jp/2021/05/11/Docker%E4%B8%8A%E3%81%AE-Elasticsearc
 ```
 sudo echo "262144" | sudo tee /proc/sys/vm/max_map_count
 ```
+
+### k-nn検索
+https://docs.aws.amazon.com/ja_jp/opensearch-service/latest/developerguide/knn.html
