@@ -1,5 +1,5 @@
 -- 存在するときに削除
-DROP SCHEMA app CASCADE;
+DROP SCHEMA IF EXISTS app CASCADE;
 
 -- 初期生成
 CREATE SCHEMA app;
