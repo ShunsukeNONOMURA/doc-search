@@ -1,0 +1,17 @@
+-- 存在するときに削除
+DROP SCHEMA app CASCADE;
+
+-- 初期生成
+CREATE SCHEMA app;
+CREATE TABLE app.t_document
+(
+    document_id text COLLATE pg_catalog."default" NOT NULL,
+    document_name text COLLATE pg_catalog."default" NOT NULL,
+    document_content text COLLATE pg_catalog."default" NOT NULL,
+    document_creation_user_id text NOT NULL,
+    document_creation_datetime timestamp(6) without time zone NOT NULL,
+    document_update_user_id text NOT NULL,
+    document_update_datetime timestamp(6) without time zone NOT NULL,
+    CONSTRAINT t_document_pkey PRIMARY KEY (document_id)
+)
+TABLESPACE pg_default;
