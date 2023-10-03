@@ -52,3 +52,18 @@ GET my-index/_search
     }
   }
 }
+
+PUT my-index-sentence
+{
+  "settings": {
+    "index.knn": true
+  },
+  "mappings": {
+    "properties": {
+      "stsb-xlm-r-multilingual-vector": {
+        "type": "knn_vector",
+        "dimension": 768
+      }
+    }
+  }
+}

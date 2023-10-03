@@ -15,3 +15,5 @@ services:
     environment: 
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=all
+    extra_hosts:
+      - "host.docker.internal:host-gateway" # ホスト側のポートに接続

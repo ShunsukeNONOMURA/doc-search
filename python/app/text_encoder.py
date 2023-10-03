@@ -12,8 +12,8 @@ class TextEncoder:
         handler = logging.NullHandler()
         handler.setLevel(logging.DEBUG)
         self.logger.addHandler(handler)
-        # self.model = SentenceTransformer('stsb-xlm-r-multilingual')
-        self.model = SentenceTransformer('./pytorch_model.bin')
+        self.model = SentenceTransformer('stsb-xlm-r-multilingual')
+        # self.model = SentenceTransformer('./pytorch_model.bin')
 
     def encode(self, text, normalize=True):
         if normalize:
